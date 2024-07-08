@@ -6,7 +6,7 @@ Logic::Logic(QLineEdit* display)
 void Logic::onDigitPressed(QPushButton* button) {
     QString buttonText = button->text();
     double buttonValue = buttonText.toDouble();
-    QString newLabel;
+    QString newLabel; 
 
     if ((display->text().toDouble() == 0) && (display->text().length() == 1)) {
         newLabel = QString::number(buttonValue, 'g', 15);
